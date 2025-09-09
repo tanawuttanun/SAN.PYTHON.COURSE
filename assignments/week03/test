@@ -1,0 +1,23 @@
+def check_age_group(age):
+    if age <= 12:
+        return "Child"
+    elif 13 <= age <= 19:
+        return "Teenager"
+    elif 20 <= age <= 59:
+        return "Adult"
+    elif age >= 60:
+        return "Senior"
+    else:
+        return "Invalid"
+
+age = int(input("Enter how old are you ? :"))
+print("You are:", check_age_group(age))
+
+distance = 120
+fuel_price = 35
+fuel_consumption = 15
+
+fuel_used = distance / fuel_consumption
+cost = fuel_used * fuel_price
+
+print(f"Product: distance {distance} km. used {int(cost)} THB")
