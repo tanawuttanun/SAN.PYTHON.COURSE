@@ -22,3 +22,15 @@ class Rectangle:
 rect = Rectangle(10, 5)
 print(rect.get_area())       # Should print 50
 print(rect.get_perimeter())  # Should print 30
+
+class Circle:
+    def __int__(self,radius):
+        self.radius = radius
+        print("Circle created!")
+
+    def gerArear(self):
+        return 3.1416 * self.radius
+
+MyCircle = Circle(10)
+print(MyCircle.gerArear())
+print(MyCircle.getPerimeter())
