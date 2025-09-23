@@ -12,11 +12,12 @@ class Rectangle:
 
     # Method to get the area
     def get_area(self):
-        pass
+        area = self.length * self.width
+        return area
 
     # Method to get the perimeter
     def get_perimeter(self):
-        pass
+        return self.width + self.lenght * 2
 
 
 rect = Rectangle(10, 5)
